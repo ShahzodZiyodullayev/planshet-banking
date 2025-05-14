@@ -14,7 +14,7 @@ export const api = axios.create({
 });
 
 api.interceptors.request.use(
-  (config) => {
+  config => {
     config.headers["Cache-Control"] = "no-cache ";
     config.headers["Pragma"] = "no-cache";
 
@@ -30,16 +30,16 @@ api.interceptors.request.use(
 
     return config;
   },
-  (error) => {
+  error => {
     return Promise.reject(error);
   },
 );
 
 api.interceptors.response.use(
-  (response) => {
+  response => {
     return response.data;
   },
-  (error) => {
+  error => {
     const { response } = error;
 
     return handleError(response);

@@ -182,8 +182,7 @@ export const withMantine = (component: ComponentType) => () => {
       theme={theme}
       withCssVariables
       defaultColorScheme="light"
-      stylesTransform={emotionTransform}
-    >
+      stylesTransform={emotionTransform}>
       <MantineEmotionProvider>
         <Notifications limit={3} position="bottom-center" zIndex={100000} />
         {createElement(component)}

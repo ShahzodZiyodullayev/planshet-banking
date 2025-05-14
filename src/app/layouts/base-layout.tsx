@@ -14,8 +14,7 @@ const BaseLayout = () => {
     <AppShell
       header={{ height: 60 }}
       navbar={{ width: 300, breakpoint: "sm", collapsed: { mobile: !opened } }}
-      padding="md"
-    >
+      padding="md">
       <AppShell.Header>
         <Group h="100%" px="md">
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
@@ -34,8 +33,7 @@ const BaseLayout = () => {
         ))}
       </AppShell.Navbar>
 
-      <AppShell.Main w={'100%'}>
-
+      <AppShell.Main w={"100%"}>
         <Outlet />
       </AppShell.Main>
     </AppShell>
