@@ -1,5 +1,11 @@
+
+import { PageHeader } from "@/shared/ui/pageHeader";
+import { Container } from "@mantine/core";
+
 const Client = () => {
-  return <div>Client</div>;
+  return <Container w={'100%'} px="md" className="border">
+  <PageHeader title={"Клиенты"} buttonName={"Добавить"}/>
+  </Container>;
 };
 
 export default Client;

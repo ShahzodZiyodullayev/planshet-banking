@@ -33,7 +33,9 @@ const BaseLayout = () => {
           />
         ))}
       </AppShell.Navbar>
-      <AppShell.Main>
+
+      <AppShell.Main w={'100%'}>
+
         <Outlet />
       </AppShell.Main>
     </AppShell>
